@@ -1,0 +1,80 @@
+html{
+    background-color: #f3e2fc;
+}
+
+header{
+    background-color: #4c116e;
+    padding: 20px;
+    text-align: center;
+}
+
+#header{
+    color: #f1f1f1;
+    text-shadow: #353535 ;
+}
+
+#Primera_Seccion{
+    display: flex;
+}
+
+#Imagen_persona{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ae0303;
+}
+
+#Personal-Information, #Habilidades_Del_Programador{  /*se puede estilzar dos elementos de css a la vez ,colocando , */
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ae0303;
+}
+
+/*tambien se puede estilizar un elemento en especifico dentro de un id */
+
+#Personal-Information h2, #Habilidades_Del_Programador h2{
+    font-size: 30px;
+}
+
+#Habilidades_Del_Programador ul{
+    list-style-type:circle;   /*NUEVO ELEMENTO : CON ESTE ELEMENTO PUEDO ESTILIZAR UNA LISTA ENTERA EN CSS*/
+}
+
+footer{
+    background-color: #f1f1f1;
+    color:#353535;
+    text-align: center;
+    padding: 10px;
+    /*position: absolute; /*lo que hace position : absolute es posicionar el elemento donde nosotros quereamos ...*/
+    width: 97%;
+    bottom: 0;
+}
+
+@media screen and (max-width:600px){
+    .imagen{
+        width: 26rem;
+        height: 20rem;
+    }
+    #Primera_Seccion{
+        display: block;
+    } 
+    header , #Personal-Information,#Habilidades_Del_Programador{
+        padding: 10px;
+    } 
+
+    h1,h2 {
+        font-size: 18px;
+    }
+}
+
+/*otro media querie que se ajuste a la pagina cuando sea responsive*/
+/*en este caso se aplica con el minimo */
+
+@media screen and (min-width:102px) {
+    header , #Personal-Information ,#Habilidades_Del_Programador{
+        padding: 30px;
+    }
+
+    h1,h2{
+        font-size: 28px;
+    }
+}
